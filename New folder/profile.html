@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
+        id="bootstrap-css">
+    <link href="profile.css" type="text/css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+
+
+<body>
+    <div class="card">
+        <img src="temp.jfif" class="card-img-top" alt="...">
+
+        <div class="card-body">
+            <a href="" class="profilepicture"><img src="iman.jpg" class="profile-pic" alt="..."></a>
+            <button type="submit" class="btn-profile" onclick="openForm()"><b>Edit profile</b></button>
+            <h5 class="card-title">Imaan</h5>
+            <p class="temp">@Iman_Dbt</p>
+            <br>
+            <p>Software Engineer.Choose love. Forever LSU</p>
+            <p><img src="baloon.png">Born April 22, 1990 <img src="calendar.png"> Joined July 2013</p>
+            <p><b>399</b> Following <b>955</b> Followers</p>
+
+
+        </div>
+    </div>
+
+    <div id="myForm" class ="modal"style="display: none;">
+        <div class = "cover"></div>
+        <div class="card form" >
+            <div class ="edit"><h5>Edit profile</h5>
+            <button type="submit" class="btn-edit" onclick="closeForm()"><b>Save</b></button>
+            </div> 
+            <img src="temp.jfif" class="card-img-top">
+
+            <div class="card-body">
+                <a href="" class="profilepicture"><img src="iman.jpg" class="profile-pic"></a>
+
+                <p>
+                    <br>
+                    <form class="editform">
+                        <div class="control-container">
+                            <label for="">Name</label>
+                            <input type="text" placeholder="Imaan">
+                        </div>
+                        <br>
+                        <div class="control-container">
+                            <label for="">Bio</label>
+                            <input type="text" placeholder="Software Engineer.Choose love. Forever LSU">
+                        </div>
+                        <br>
+                        <div class="control-container">
+                            <label for="">Location</label>
+                            <input type="text" placeholder="Add your location">
+                        </div>
+                        <br>
+                        <div class="control-container">
+                            <label for="">Website</label>
+                            <input type="text" placeholder="Add your Website">
+                        </div>
+                        <br>
+                        <p>Birth date.<a href="">Edit</a></p>
+                        <p>April 22,1990</p>
+                        
+                        
+                    </form>
+
+
+
+
+                </p>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        function openForm() {
+            const form = document.getElementById("myForm");
+            let display = form.style.display;
+            form.style.display = display == 'flex' ? 'none' : 'flex';
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
